@@ -8,7 +8,7 @@ green = LED(20)
 button = Button(2)
 
 def traffic():
-    green.off()
+#    green.off()
     red.on()
     sleep(2)
     red.off()
@@ -16,7 +16,12 @@ def traffic():
     sleep(2)
     yellow.off()
     green.on()
-green.on()
+    sleep(2)
+    green.off()
+'''green.on()
 button.when_pressed = traffic
        
-pause()
+pause()'''
+
+while True:
+    traffic()
